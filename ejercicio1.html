@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo</title>
+</head>
+<body>
+    <div id="miContenedor">
+  <p> reflejan la conexión entre la humanidad y la naturaleza</p>  
+    </div>
+
+    <div class="caja">Gato</div>
+     <div class="caja">Perro</div>
+      <p id="Mensaje">Buenos Dias</p>
+     <p id="Mensaje">Hoy es un lindo dia</p>
+     
+  <script>
+    const titulopag= document.title;
+    console.log(titulopag);
+
+    const elemento= document.getElementById("miContenedor");
+    document.write(elemento.innerText);
+
+    const primeraCaja = document.querySelector(".caja");
+    document.write(primeraCaja.textContent);
+    const miMensaje = document.querySelector("#mensaje");
+    document.write(miMensaje.textContent);
+  </script>
+</body>
+</html>
